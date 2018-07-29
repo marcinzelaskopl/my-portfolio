@@ -1,0 +1,28 @@
+.mainWork {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  background-color: #D16014;
+  color: white;
+    h5 {
+      color: #1D1F1E;
+      text-align: center;
+    }
+    a {
+      text-decoration: none;
+      color: white;
+    }
+    p {
+      background: linear-gradient(to right, #D16014 50%, #1D1F1E 50%);
+      background-size: 200% 100%;
+      background-position:left bottom;
+      margin: 10px;
+      transition: all ease 0.8s;
+      &:hover {
+        background-position:right bottom;
+        cursor: pointer;
+      }
+    }
+}

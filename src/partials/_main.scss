@@ -1,0 +1,57 @@
+.main {
+  font-size: 30px;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1D1F1E;
+    p {
+      color: #D16014;
+      margin-bottom: 30px;
+    }
+}
+
+.arrow {
+  &:hover {
+    cursor: pointer;
+  }
+  text-align: center;
+  margin-top: 50px;
+  font-size: 40px;
+}
+.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #D16014; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+          typing 3.5s steps(40, end),
+          blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #D16014; }
+}
+
+@media (max-width: 600px) {
+  .main {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 400px) {
+  .main {
+    font-size: 8px;
+    height: 100vh;
+  }
+}
