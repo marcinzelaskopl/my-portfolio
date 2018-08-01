@@ -1,0 +1,23 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  background-color: #1D1F1E;
+    img {
+      margin: 10px;
+      transition: 0.3s;
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.25);
+      }
+    }
+}
+
+.arrow-up {
+  color: white;
+  font-size: 70px;
+  &:hover {
+    cursor: pointer;
+  }
+}

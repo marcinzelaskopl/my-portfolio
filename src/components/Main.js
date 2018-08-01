@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../App.css';
 import MainAbout from "./MainAbout";
 import MainWork from "./MainWork";
+import Footer from "./Footer";
 
 class Main extends Component {
     render(){
@@ -11,7 +12,7 @@ class Main extends Component {
         }
         return (
             <div>
-            <div className={'grid-container main'}>
+            <div id={'main'} className={'grid-container main'}>
                 <div className={'row'}>
                     <div className={'col-12'}>
                         <p>My Portfolio</p>
@@ -22,8 +23,12 @@ class Main extends Component {
             </div>
                 <MainAbout/>
                 <MainWork/>
+                <Footer/>
             </div>
         )
+    }
+    componentDidMount() {
+        window.scrollTo(0, 0);
     }
 }
 

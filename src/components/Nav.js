@@ -13,10 +13,9 @@ class Nav extends Component {
                 <div className={'row'}>
                     <div className={'col-12 nav'}>
                         <ul>
-                            <li className={'strike'}>HOME</li>
-                            <li className={'strike'}>WORK</li>
-                            <li className={'strike'}>ABOUT</li>
-                            <li className={'strike'}>CONTACT</li>
+                            <Link to='/' className={'strike'}>HOME</Link>
+                            <Link to='/about' className={'strike'}>ABOUT</Link>
+                            <Link to='/contact' className={'strike'}>CONTACT</Link>
                         </ul>
                     </div>
                 </div>

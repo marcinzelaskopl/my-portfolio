@@ -1,0 +1,41 @@
+.contact {
+  letter-spacing: 4px;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1D1F1E;
+  font-size: 30px;
+    h3 {
+      color: #D16014;
+      letter-spacing: 3px;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+    }
+    p {
+      color: white;
+    }
+    img {
+      margin: 20px;
+      &:hover {
+        transition: 0.3s;
+        cursor: pointer;
+        transform: scale(1.25);
+      }
+    }
+}
+
+.contact-info {
+  margin-top: 50px;
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  .contact {
+    height: 150vh;
+    font-size: 10px;
+    text-align: center;
+  }
+}

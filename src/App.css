@@ -72,6 +72,12 @@
     margin: 10px; }
     .nav li:hover {
       cursor: pointer; }
+  .nav a {
+    text-decoration: none;
+    color: white;
+    margin: 10px; }
+    .nav a:active {
+      text-decoration: #D16014 line-through; }
 
 @keyframes strike {
   0% {
@@ -158,6 +164,10 @@
   .mainAbout h6 {
     text-align: center;
     color: #D16014; }
+  .mainAbout a {
+    text-decoration: none;
+    color: #1D1F1E;
+    text-align: center; }
 
 .more {
   margin-top: 30px;
@@ -182,7 +192,8 @@
   color: white; }
   .mainWork h5 {
     color: #1D1F1E;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 20px; }
   .mainWork a {
     text-decoration: none;
     color: white; }
@@ -191,9 +202,128 @@
     background-size: 200% 100%;
     background-position: left bottom;
     margin: 10px;
-    transition: all ease 0.8s; }
+    transition: all ease 0.5s; }
     .mainWork p:hover {
       background-position: right bottom;
       cursor: pointer; }
+
+@media (min-width: 300px) and (max-width: 600px) {
+  .mainWork {
+    height: 80vh; } }
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  background-color: #1D1F1E; }
+  .footer img {
+    margin: 10px;
+    transition: 0.3s; }
+    .footer img:hover {
+      cursor: pointer;
+      transform: scale(1.25); }
+
+.arrow-up {
+  color: white;
+  font-size: 70px; }
+  .arrow-up:hover {
+    cursor: pointer; }
+
+.about {
+  line-height: 75px;
+  font-size: 40px;
+  height: 120vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .about h1 {
+    color: #D16014; }
+  .about h2 {
+    color: #1D1F1E; }
+  @media (min-width: 300px) and (max-width: 600px) {
+    .about {
+      height: 250vh;
+      font-size: 27px;
+      text-align: center; } }
+
+.aboutEmail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  background-color: #D16014; }
+  .aboutEmail a {
+    text-decoration: none;
+    color: white; }
+  .aboutEmail h3 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: #1D1F1E; }
+  .aboutEmail h1 {
+    margin-bottom: 10px;
+    color: white; }
+  @media (min-width: 300px) and (max-width: 600px) {
+    .aboutEmail {
+      height: 100vh; } }
+
+.aboutSkills {
+  font-size: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh; }
+  @media (min-width: 300px) and (max-width: 600px) {
+    .aboutSkills {
+      height: 100vh; } }
+  .aboutSkills h1 {
+    color: #1D1F1E;
+    margin-bottom: 20px; }
+  .aboutSkills li {
+    list-style: none;
+    background: linear-gradient(to right, #D16014 50%, #1D1F1E 50%);
+    background-size: 200% 100%;
+    background-position: left bottom;
+    margin: 10px;
+    transition: all ease 0.5s; }
+    .aboutSkills li:hover {
+      background-position: right bottom;
+      cursor: pointer; }
+
+.skills-info {
+  display: none; }
+
+.contact {
+  letter-spacing: 4px;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1D1F1E;
+  font-size: 30px; }
+  .contact h3 {
+    color: #D16014;
+    letter-spacing: 3px; }
+  .contact a {
+    color: white;
+    text-decoration: none; }
+  .contact p {
+    color: white; }
+  .contact img {
+    margin: 20px; }
+    .contact img:hover {
+      transition: 0.3s;
+      cursor: pointer;
+      transform: scale(1.25); }
+
+.contact-info {
+  margin-top: 50px; }
+
+@media (min-width: 300px) and (max-width: 600px) {
+  .contact {
+    height: 150vh;
+    font-size: 10px;
+    text-align: center; } }
 
 /*# sourceMappingURL=App.css.map */

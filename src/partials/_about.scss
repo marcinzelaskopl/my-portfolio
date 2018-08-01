@@ -1,0 +1,75 @@
+.about {
+  line-height: 75px;
+  font-size: 40px;
+  height: 120vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    h1 {
+      color: #D16014;
+    }
+    h2 {
+      color: #1D1F1E;
+    }
+  @media (min-width: 300px) and (max-width: 600px) {
+    height: 250vh;
+    font-size: 27px;
+    text-align: center;
+  }
+}
+
+.aboutEmail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  background-color: #D16014;
+    a {
+      text-decoration: none;
+      color: white;
+    }
+    h3 {
+      margin-bottom: 10px;
+      font-size: 30px;
+      color: #1D1F1E;
+    }
+    h1 {
+      margin-bottom: 10px;
+      color: white;
+    }
+  @media (min-width: 300px) and (max-width: 600px) {
+    height: 100vh;
+  }
+}
+
+.aboutSkills {
+  font-size: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  @media (min-width: 300px) and (max-width: 600px) {
+    height: 100vh;
+  }
+  h1 {
+    color: #1D1F1E;
+    margin-bottom: 20px;
+  }
+  li {
+    list-style: none;
+    background: linear-gradient(to right, #D16014 50%, #1D1F1E 50%);
+    background-size: 200% 100%;
+    background-position: left bottom;
+    margin: 10px;
+    transition: all ease 0.5s;
+    &:hover {
+      background-position: right bottom;
+      cursor: pointer;
+    }
+  }
+}
+
+.skills-info {
+  display: none;
+}
